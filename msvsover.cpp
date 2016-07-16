@@ -29,6 +29,10 @@ std::string t(conduit_uint64 v)  { return t_uint64(v);}
 std::string t(conduit_float32 v) { return t_float32(v);}
 std::string t(conduit_float64 v) { return t_float64(v);}
 
+#ifdef _WIN32
+  std::string t(unsigned int v)  { return t_uint32(v);}  
+#endif
+
 
 int main()
 {   
