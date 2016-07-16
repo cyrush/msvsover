@@ -1,0 +1,21 @@
+sudo: false
+
+language: cpp
+
+compiler:
+  - gcc
+  - clang
+
+os:
+  - linux
+  - osx
+
+script:
+  - mkdir build
+  - cd build
+  # configure with cmake
+  - cmake  ../
+  # build 
+  - make
+  # run test
+  - make test
