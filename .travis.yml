@@ -18,4 +18,5 @@ script:
   # build 
   - make
   # run test
-  - make test
+  - ctest -VV
+
