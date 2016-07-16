@@ -9,6 +9,7 @@ init:
 
 # scripts to run before build
 before_build:
+  - del "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets"
   - echo Running cmake ...
   - cmake -H. -Bbuild -G "%CMAKE_GENERATOR%"
 
@@ -17,7 +18,7 @@ build_script:
   - cmake --build build --config "%CONFIGURATION%"
 
 after_build:
-  - ctest -VV
+  - cmake --build build --target test
 
 artifacts:
   - path: build/msvsover
