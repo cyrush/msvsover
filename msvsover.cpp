@@ -2,9 +2,7 @@
 // msvsover
 //----
 #include <string>
-#include <cstdint>
 #include <iostream>
-
 
 #include "Bitwidth_Style_Types.h"
 
