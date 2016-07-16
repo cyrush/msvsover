@@ -17,7 +17,8 @@ build_script:
   - cmake --build build --config "%CONFIGURATION%"
 
 after_build:
-  - cmake --build build --target test
+  - ps: cd build
+  - ctest -VV
 
 artifacts:
   - path: build/msvsover
