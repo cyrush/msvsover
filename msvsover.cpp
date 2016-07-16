@@ -39,7 +39,7 @@ int main()
     conduit_uint32 u32 = 32;
     conduit_uint64 u64 = 64;
     
-    conduit_float32 f32 = 3.14159;
+    conduit_float32 f32 = 3.14159f;
     conduit_float64 f64 = 3.14159;
     
     std::cout << "u8:  " << t(u8)  << std::endl
@@ -56,7 +56,7 @@ int main()
     unsigned int   ui  = 10;
     unsigned long  ul  = 10;
 
-    float          f   = 3.1415;
+    float          f   = 3.1415f;
     double         d   = 3.1415;
 
     std::cout << "uc: " << t(uc) << std::endl
